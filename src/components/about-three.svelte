@@ -1,0 +1,58 @@
+<script>
+    import { Icon } from "svelte-icons-pack";
+    import { FiShield, FiAperture }  from "svelte-icons-pack/fi"
+  
+    import phone from '../assets/images/phone/half-1.png'
+  
+  </script>
+  
+  
+  <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
+      <div class="lg:col-span-5 md:col-span-6">
+          <div class="pt-6 px-6 rounded-2xl bg-red-500/5 dark:bg-red-500/10 shadow shadow-red-500/20">
+              <img src={phone} class="wow animate__animated animate__zoomIn" alt="" data-wow-delay=".7s">
+          </div>
+      </div><!--end grid-->
+  
+      <div class="lg:col-span-7 md:col-span-6">
+          <div class="lg:ms-10">
+            <div class="wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
+                <h6 class="text-red-500 uppercase text-sm font-bold tracking-wider mb-3">Customizable</h6>
+                <h4 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-bold">Work Faster With <br> Powerful Tools</h4>
+                <p class="text-slate-400 max-w-xl">Unleash the power of our platform with a multitude of powerful features, empowering you to achieve your goals.</p>
+            </div>
+  
+              <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 mt-6">
+                  <div class="group flex relative overflow-hidden p-6 rounded-md shadow dark:shadow-gray-800 bg-slate-50/50 dark:bg-slate-800/20 hover:bg-red-500 dark:hover:bg-red-500 duration-500">
+                      <span class="text-red-500 group-hover:text-white text-5xl font-semibold duration-500 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                          <Icon src={FiShield} className="size-8 mt-2"></Icon>
+                      </span>
+                      <div class="flex-1 ms-3">
+                          <h5 class="group-hover:text-white text-lg font-semibold duration-500">Enhance Security</h5>
+                          <p class="text-slate-400 group-hover:text-white/50 duration-500 mt-2">There are many variations of passages of Lorem Ipsum available</p>
+                      </div>
+                      <div class="absolute start-1 top-5 text-slate-900/[0.02] dark:text-white/[0.03] text-8xl group-hover:text-white/[0.1] duration-500">
+                          <Icon src={FiShield} className="size-24"></Icon>
+                      </div>
+                  </div>
+  
+                  <div class="group flex relative overflow-hidden p-6 rounded-md shadow dark:shadow-gray-800 bg-slate-50/50 dark:bg-slate-800/20 hover:bg-red-500 dark:hover:bg-red-500 duration-500 wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+                      <span class="text-red-500 group-hover:text-white text-5xl font-semibold duration-500">
+                          <Icon src={FiAperture} className="size-8 mt-2"></Icon>
+                      </span>
+                      <div class="flex-1 ms-3">
+                          <h5 class="group-hover:text-white text-lg font-semibold duration-500">High Performance</h5>
+                          <p class="text-slate-400 group-hover:text-white/50 duration-500 mt-2">There are many variations of passages of Lorem Ipsum available</p>
+                      </div>
+                      <div class="absolute start-1 top-5 text-slate-900/[0.02] dark:text-white/[0.03] text-8xl group-hover:text-white/[0.1] duration-500">
+                          <Icon src={FiAperture} className="size-24"></Icon>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="mt-6 wow animate__animated animate__fadeInUp" data-wow-delay=".7s">
+                  <a href="#top" on:click|preventDefault={()=>{}}  class="hover:text-red-500 dark:hover:text-red-500 after:bg-red-500 dark:text-white transition duration-500 font-medium">Learn More <i class="mdi mdi-arrow-right align-middle"></i></a>
+              </div>
+          </div>
+      </div>
+  </div><!--end grid-->
